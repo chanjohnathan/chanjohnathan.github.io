@@ -21,7 +21,7 @@ $(document).ready(function(){
   $('.text-swap').each(function() {
 	var $self = $(this);
     $self.parent().queue(function (n) {
-      $self.fadeIn(2000).delay(4500).fadeOut(2000, n);
+      $self.fadeIn(1000).delay(3800).fadeOut(1000, n);
     });
   }).parent().promise().done(loop);
 }());
