@@ -4,13 +4,17 @@ body {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
         ),
-    url(/img/bg.jpg) no-repeat center center fixed ;
+    url(/img/bg.jpg) no-repeat top left fixed ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
     color: #fff;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
 }
 
 a .social-media {
@@ -43,6 +47,7 @@ p {
     -webkit-animation-duration: 10s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: 1;
+    overflow: initial;
 }
 
 .h1 {
@@ -73,10 +78,24 @@ p {
   font-size: 20em;
 }
 
+.fix-overflow {
+    position:relative;
+    top:0;
+    left:0;
+    height:3em;
+}
 
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px 0 20px;
+    }
 
-/*@media (max-width: 768px) {
-  body {
-    padding: 0 20px 0 20px;
-  }
-}*/
+    h1 {
+        font-size: 2em;
+    }
+
+    .h1 {
+        font-size: 2em;
+    }
+
+}
