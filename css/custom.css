@@ -59,15 +59,15 @@ body {
 
 .popover-title {
     font-size: 1.2em;
-    color: #1d1d1d;
-    background: #fff;
+    color: #3EBFFC;
+    background: #1d1d1d;
     border-bottom: 0;
 }
 
 .popover {
-    border: 4px solid #3EBFFC;
+    border: 3px solid #3EBFFC;
     color: #1d1d1d;
-    background: #fff;
+    background: #1d1d1d;
 }
 
 .popover.right .arrow, .popover.right .arrow:after {
