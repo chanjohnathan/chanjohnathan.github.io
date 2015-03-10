@@ -70,7 +70,7 @@ body {
     background: #fff;
 }
 
-.popover.right .arrow:after {
+.popover.right .arrow, .popover.right .arrow:after {
     border-right-color: #3EBFFC;
 }
 
