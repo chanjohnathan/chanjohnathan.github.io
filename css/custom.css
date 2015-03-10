@@ -13,9 +13,76 @@ body {
     color: #fff;
 }
 
+/* Custom stuff */
+
+.top-spacer {
+    margin-top:5em;
+}
+
+.blue {
+    color: #3EBFFC;
+}
+
+.fix-overflow {
+    position:relative;
+    top:0;
+    left:0;
+    height:3em;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Text swap */
+
+.text-swap {
+    display: none;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    overflow: initial;
+}
+
+/* Bootstrap override */
+
+.h1 {
+    font-size:2.5em;
+}
+
+.popover-title {
+    font-size: 1.2em;
+    color: #1d1d1d;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.popover {
+    border: 4px solid #3EBFFC;
+    color: #1d1d1d;
+    background: #fff;
+}
+
+.popover.right .arrow:after {
+    border-right-color: #3EBFFC;
+}
+
+p {
+    font-size:1.6em;
+}
+
 a, a:focus, a:hover {
     text-decoration: none;
 }
+
+/* Social media icons */
 
 a .social-media {
     display: inline-block;
@@ -37,30 +104,7 @@ a:hover .social-media, a:focus .social-media {
     border: 0;
 }
 
-p {
-    font-size:1.6em;
-}
-
-
-.text-swap {
-    display: none;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-iteration-count: 1;
-    overflow: initial;
-}
-
-.h1 {
-    font-size:2.5em;
-}
-
-.top-spacer {
-    margin-top:5em;
-}
-
-.blue {
-    color: #3EBFFC;
-}
+/* Custom FontAwesome sizes */
 
 .fa-2 {
   font-size: 2em;
@@ -78,12 +122,8 @@ p {
   font-size: 20em;
 }
 
-.fix-overflow {
-    position:relative;
-    top:0;
-    left:0;
-    height:3em;
-}
+
+/* Responsive goodness */
 
 @media (max-width: 768px) {
     body {
