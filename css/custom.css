@@ -74,6 +74,11 @@ body {
     border-right-color: #3EBFFC;
 }
 
+.popover.bottom .arrow, .popover.bottom .arrow:after {
+    border-bottom-color: #3EBFFC;
+}
+
+
 p {
     font-size:1.6em;
 }
