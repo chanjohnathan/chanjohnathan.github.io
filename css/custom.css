@@ -65,6 +65,7 @@ body {
 }
 
 .popover {
+    padding: 5px;
     border: 3px solid #3EBFFC;
     color: #1d1d1d;
     background: #1d1d1d;
@@ -85,6 +86,11 @@ p {
 
 a, a:focus, a:hover {
     text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #ccc;
 }
 
 /* Social media icons */
