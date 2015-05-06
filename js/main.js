@@ -3,9 +3,11 @@ var animateMouse = 'animated pulse';
 var animateClick = 'animated swing';
 
 $(document).ready(function(){
-	// ********************************
+
+	//
 	// Social icon animations
-	// ********************************
+	//
+
 	$('.social-media').on('mouseover', function (){
 		$(this).addClass(animateMouse);
 	});
@@ -19,13 +21,15 @@ $(document).ready(function(){
 		});
 	});
 
-	// ********************************
+	//
 	// Popover
-	// ********************************
+	//
+
 	// Init popover
 	$('#more-hci').popover({
 		viewport: '.container'
 	});
+
 	// Hide on click outside
 	$('body').on('click', function (e) {
 	    $('[data-toggle="popover"]').each(function () {
