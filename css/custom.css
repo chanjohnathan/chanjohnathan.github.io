@@ -1,16 +1,39 @@
 body {
-    background:
-    linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-        ),
-    url(/img/bg.jpg) no-repeat top left fixed ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
     color: #fff;
+}
+
+.overlay {
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+        );
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+video#bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(img/bg.jpg) no-repeat;
+    background-size: cover;
 }
 
 /* Custom stuff */
@@ -89,9 +112,7 @@ a, a:focus, a:hover {
     color: #999;
 }
 
-a:hover {
-    color: #ccc;
-}
+a:hover { color: #ccc; }
 
 /* Social media icons */
 
@@ -116,37 +137,16 @@ a:hover .social-media, a:focus .social-media {
 }
 
 /* Custom FontAwesome sizes */
-
-.fa-2 {
-  font-size: 2em;
-}
-.fa-3 {
-  font-size: 4em;
-}
-.fa-4 {
-  font-size: 7em;
-}
-.fa-5 {
-  font-size: 12em;
-}
-.fa-6 {
-  font-size: 20em;
-}
+.fa-2 { font-size: 2em; }
+.fa-3 { font-size: 4em; }
+.fa-4 { font-size: 7em; }
+.fa-5 { font-size: 12em; }
+.fa-6 { font-size: 20em; }
 
 
 /* Responsive goodness */
-
 @media (max-width: 768px) {
-    body {
-        padding: 0 20px 0 20px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .h1 {
-        font-size: 2em;
-    }
-
+    body { padding: 0 20px 0 20px; }
+    h1 { font-size: 2em; }
+    .h1 { font-size: 2em; }
 }
